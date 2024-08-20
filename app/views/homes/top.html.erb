@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="sidebar col-3">
+      サイドバー
+      <ul>
+        <li>
+          <%= link_to bootstrap_path do %>
+            まずはBootstrap
+          <% end %>
+        </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="top_contents col-md-9">
+      右側の要素
+      <h1>Top page</h1>
+      このページを表示するために以下のような記述をしています。
+      <pre>
+        <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Stubloom&lt;/title&gt;
+      &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+      &lt;%= csrf_meta_tags %&gt;
+      &lt;%= csp_meta_tag %&gt;
+  
+      &lt;%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %&gt;
+      &lt;%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %&gt;
+    &lt;/head&gt;
+  
+    &lt;body&gt;
+      &lt;header&gt;
+        &lt;%= render 'layouts/header' %&gt;
+      &lt;/header&gt;
+      &lt;main&gt;
+        &lt;%= yield %&gt;
+      &lt;/main&gt;
+      &lt;footer&gt;
+        &lt;%= render 'layouts/footer' %&gt;
+      &lt;/footer&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
