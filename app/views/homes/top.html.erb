@@ -3,11 +3,7 @@
     <div class="sidebar col-3">
       サイドバー
       <ul>
-        <li>
-          <%= link_to bootstrap_path do %>
-            まずはBootstrap
-          <% end %>
-        </li>
+        <li><%= link_to "Bootstrap(color/button)", bootstrap_path %></li>
         <li></li>
         <li></li>
       </ul>
@@ -44,6 +40,14 @@
   &lt;/html&gt;
         </code>
       </pre>
+      <h5>note! 特殊文字</h5>
+      【&amp;nbsp;】：半角スペースと同じサイズの空白<br/>
+      【&amp;thinsp;】：&amp;nbsp;の空白より小さい空白<br/>
+      【&amp;ensp;】：半角スペースより間隔がやや広い空白<br/>
+      【&amp;emsp;】：全角スペースとほぼ同じサイズの空白<br/>
+      【&amp;lt;】：＜記号<br/>
+      【&amp;gt;】：＞記号<br/>
+      【&amp;】：＆記号
     </div>
   </div>
 </div>
