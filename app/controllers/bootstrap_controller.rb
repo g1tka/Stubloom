@@ -1,2 +1,0 @@
-class BootstrapController < ApplicationController
-end
