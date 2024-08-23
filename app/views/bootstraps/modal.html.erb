@@ -1,5 +1,6 @@
 <div class="container">
   <h2>modalのページ</h2>
+<!--1-->
   <div class="row">
     <div class="col-md-3">
       <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#exampleModal">button1</button><br/>
@@ -52,6 +53,7 @@
       </div>
     </div>
   </div>
+<!--2-->
   <div class="row mt-3">
     <div class="col-md-3">
       <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#staticBackdrop">button2</button><br/>
@@ -60,7 +62,7 @@
     <div class="col-md-9 mt-3">
       <pre>
         <code>
-  &lt;div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"&gt;
+  &lt;div class="modal fade" id="staticBackdrop" <strong style="color: red;">data-backdrop="static"</strong> data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"&gt;
     &lt;div class="modal-dialog"&gt;
       &lt;div class="modal-content"&gt;
         &lt;div class="modal-header"&gt;
@@ -82,18 +84,122 @@
         </code>
       </pre>
       </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            これは画面外やEscでは閉じられないモーダルです。
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--3-->
+  <div class="row mt-3">
+    <div class="col-md-3">
+      <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#longExample">button3</button><br/>
+      button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#longExample"
+    </div>
+    <div class="col-md-9 mt-3">
+      <pre>
+        <code>
+  &lt;div class="modal fade" id="longExample" data-keyboard="false" tabindex="-1" aria-labelledby="longExample" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog <strong style="color: red;">modal-dialog-scrollable</strong>"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;h5 class="modal-title" id="staticBackdropLabel"&gt;Modal title&lt;/h5&gt;
+          &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          long  long  Example
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+          &lt;button type="button" class="btn btn-primary"&gt;Understood&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="longExample" data-keyboard="false" tabindex="-1" aria-labelledby="longExample" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="longExample">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            long<br/><br/><br/><br/><br/><br/><br/>long<br/><br/><br/><br/><br/><br/><br/><br/><br/>Example<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--4-->
+  <div class="row mt-3">
+    <div class="col-md-3">
+      <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#centerExample">button4</button><br/>
+      button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#centerExample"
+    </div>
+    <div class="col-md-9 mt-3">
+      <pre>
+        <code>
+  &lt;div class="modal fade" id="longExample" data-keyboard="false" tabindex="-1" aria-labelledby="centerExample" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog <strong style="color: red;">modal-dialog-centered</strong>"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;h5 class="modal-title" id="staticBackdropLabel"&gt;Modal title&lt;/h5&gt;
+          &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          これはダイアログが画面中央に配置されます。
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+          &lt;button type="button" class="btn btn-primary"&gt;Understood&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+        </code>
+      </pre>
+      </div>
       <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade" id="centerExample" data-keyboard="false" tabindex="-1" aria-labelledby="centerExample" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <h5 class="modal-title" id="centerExample">Modal title</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              これは画面外やEscでは閉じられないモーダルです。
+              これはダイアログが画面中央に配置されます。
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
