@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>modalのページ</h2>
+  <h2>modal のページ</h2>
 <!--1-->
   <div class="row">
     <div class="col-md-3">
@@ -187,24 +187,67 @@
   &lt;/div&gt;
         </code>
       </pre>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="centerExample" data-keyboard="false" tabindex="-1" aria-labelledby="centerExample" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="centerExample">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            これはダイアログが画面中央に配置されます。
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="centerExample" data-keyboard="false" tabindex="-1" aria-labelledby="centerExample" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="centerExample">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              これはダイアログが画面中央に配置されます。
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
-            </div>
+    </div>
+  </div>
+<!--5-->
+  <div class="row mt-3">
+    <div class="col-md-3">
+      <a class="no-underline" href="#" data-toggle="modal" data-target="#TermInfomation">リンクを起点にもできます。</a><br/>
+      <p class="mt-2">a class="no-underline" href="#" data-toggle="modal" data-target="#TermInfomation"</p>
+    </div>
+    <div class="col-md-9 mt-3">
+      <pre>
+        <code>
+  &lt;div class="modal fade" id="TermInfomation" tabindex="-1" role="dialog" aria-labelledby="TermInfomationTitle" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header pl-5"&gt;
+          &lt;h5 class="modal-title" id="TermInfomation"&gt;&lt;strong&gt;タイトル&lt;/strong&gt;&lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body mb-3 px-4"&gt;
+          &lt;%= render "layouts/term" %&gt;（本文など）
+        &lt;/div&gt;
+        &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-success mr-4" data-dismiss="modal"&gt;同意する&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="TermInfomation" tabindex="-1" role="dialog" aria-labelledby="TermInfomationTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header pl-5">
+            <h5 class="modal-title" id="TermInfomation"><strong>タイトル</strong></h5>
+          </div>
+          <div class="modal-body mb-3 px-4">
+            本文など
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success mr-4" data-dismiss="modal">同意する</button>
           </div>
         </div>
       </div>

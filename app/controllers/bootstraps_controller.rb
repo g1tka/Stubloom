@@ -4,4 +4,7 @@ class BootstrapsController < ApplicationController
 
   def modal
   end
+
+  def gridsystem
+  end
 end
