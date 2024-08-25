@@ -1,5 +1,88 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'gridsystem' %>
+<% end %>
+
 <div class="container">
   <h2>gridsystem のページ</h2>
   <div class="row">
+    <div class="col-12">
+      このページを表示するためにapp/javascript/stylesheets/application.scssではなく、<br/>
+      app/assets/stylesheets/gridsystem.scssに別途記述。<br/>
+      当ビューページに以下の記述をし、スタイルシートを適用。
+    </div>
+    <pre><code>
+    &lt;% content_for :css do %&gt;
+      &lt;%= stylesheet_link_tag 'gridsystem' %&gt;
+    &lt;% end %&gt;</code></pre>
   </div>
+<!--1-->
+  <div class="row mt-3">
+     <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+<!--2-->
+  <div class="row mt-3">
+     <div class="col-sm py-2">
+      One of three columns
+    </div>
+    <div class="col-sm py-2">
+      One of three columns
+    </div>
+    <div class="col-sm py-2">
+      One of three columns
+    </div>
+  </div>
+<!--3-->
+  <div class="row mt-3">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+<!--4-->
+  <div class="row mt-3">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+<!--5-->
+  <div class="row justify-content-md-center mt-3">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+<!--6-->
+  <div class="row mt-3">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+
 </div>
