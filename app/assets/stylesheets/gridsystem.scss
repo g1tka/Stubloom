@@ -6,12 +6,19 @@
 
 .row {
   border: solid lightgrey;
+  background-color: beige;
 }
 
-.col-sm {
-  border: solid grey;
+.col-sm, .col, .col-4, .col-6 {
+  border: solid darkseagreen;
+  background-color: honeydew;
 }
 
-.col {
-  border: solid grey;
+.align {
+  min-height: 6rem;
+}
+
+.l1 {
+  border: solid darkseagreen;
+  background-color: moccasin;
 }
