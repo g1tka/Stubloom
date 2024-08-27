@@ -7,4 +7,7 @@ class BootstrapsController < ApplicationController
 
   def gridsystem
   end
+
+  def navbar
+  end
 end
