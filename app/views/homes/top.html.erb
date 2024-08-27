@@ -22,7 +22,8 @@
       &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
       &lt;%= csrf_meta_tags %&gt;
       &lt;%= csp_meta_tag %&gt;
-  
+
+      &lt;%script src="https://kit.fontawesome.com/xxxxxxxx.js" crossorigin="anonymous"%&gt;&lt;%/script%&gt;
       &lt;%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %&gt;
       &lt;%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %&gt;
       &lt;%= yield :css %&gt;※
@@ -50,7 +51,25 @@
       【&amp;lt;】：＜記号<br/>
       【&amp;gt;】：＞記号<br/>
       【&amp;】：＆記号<br/>
-      【&times;】：掛け算の×記号<br/>
+      【&times;】：掛け算の×記号<br/><br/>
+
+      <h5>note! FontAwesomeの導入</h5>
+      72px（指定）のアイコン：&lt;i class="fa fa-camera" style="font-size: 72px;"&gt;&lt;/i&gt;<br/>
+      小さめのアイコン：&lt;i class="fa fa-camera fa-xs"&gt;&lt;/i&gt;<br/>
+      標準サイズのアイコン：&lt;i class="fa fa-camera fa-sm"&gt;&lt;/i&gt;<br/>
+      中くらいのアイコン：&lt;i class="fa fa-camera fa-lg"&gt;&lt;/i&gt;<br/>
+      大きめのアイコン：&lt;i class="fa fa-camera fa-2x"&gt;&lt;/i&gt;<br/>
+      さらに大きいアイコン：&lt;i class="fa fa-camera fa-3x"&gt;&lt;/i&gt;<br/>
+      超大きいアイコン：&lt;i class="fa fa-camera fa-5x"&gt;&lt;/i&gt;<br/>
+      最大サイズのアイコン：&lt;i class="fa fa-camera fa-10x"&gt;&lt;/i&gt;<br/>
+      <i class="fa fa-camera" style="font-size: 72px;"></i> <!-- 72pxのサイズ -->
+      <i class="fa fa-camera fa-xs"></i>
+      <i class="fa fa-camera fa-sm"></i>
+      <i class="fa fa-camera fa-lg"></i>
+      <i class="fa fa-camera fa-2x"></i>
+      <i class="fa fa-camera fa-3x"></i>
+      <i class="fa fa-camera fa-5x"></i>
+      <i class="fa fa-camera fa-10x"></i>
     </div>
   </div>
 </div>

@@ -6,6 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/18d078742a.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= yield :css %>
@@ -13,8 +14,14 @@
 
   <body>
     <header>
-      header
-      * <%= link_to "top", root_path %> page1ページ
+      <div class="container">
+        <div class="row pt-2">
+          <%= link_to "#" do %><i class="fa-brands fa-aws fa-2x"></i><% end %>
+          <%= link_to "#", class: "mx-3" do %><i class="fa-solid fa-grip-vertical fa-lg"></i>サービス<% end %>
+          検索フォーム
+        * <%= link_to "top", root_path %> page1ページ
+        </div>
+      </div>
     </header>
     <main>
       <%= yield %>
