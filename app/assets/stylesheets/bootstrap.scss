@@ -1,3 +1,27 @@
-// Place all the styles related to the bootstrap controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* 必要に応じて調整 */
+  height: 100%;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  overflow-y: auto; /* 縦スクロールバーを表示 */
+  z-index: 1000; /* サイドバーが他のコンテンツの上に表示されるようにする */
+}
+
+/* サイドバーが表示されているときのスタイル */
+.sidebar.show {
+  transform: translateX(0);
+}
+
+/* メインコンテンツのスタイル */
+.container {
+  margin-left: 250px; /* サイドバーの幅に合わせて調整 */
+}
+
+/* ハンバーガーアイコン */
+.navbar-toggler-icon {
+  display: block;
+}
