@@ -16,10 +16,19 @@
     <header>
       <div class="container">
         <div class="row pt-2">
-          <%= link_to "#" do %><i class="fa-brands fa-aws fa-2x"></i><% end %>
-          <%= link_to "#", class: "mx-3" do %><i class="fa-solid fa-grip-vertical fa-lg"></i>サービス<% end %>
-          検索フォーム
-        * <%= link_to "top", root_path %> page1ページ
+          <div class="col-5">
+            <%= link_to "#" do %><i class="fa-brands fa-aws fa-2x"></i><% end %>
+            <%= link_to "#", class: "mx-3" do %><i class="fa-solid fa-grip-vertical fa-lg"></i>サービス<% end %>
+            検索フォーム
+          </div>
+          <div class="col-3 pt-2 ml-auto">
+            <%= link_to "#" do %><i class="fa-solid fa-terminal mx-1"></i><% end %>
+            <%= link_to "#" do %><i class="fa-regular fa-bell mx-1"></i><% end %>
+            <%= link_to "#" do %><i class="fa-regular fa-circle-question mx-1"></i><% end %>
+            <%= link_to "#" do %><i class="fa-solid fa-gear mx-1"></i><% end %>
+
+            * <%= link_to "top", root_path %>
+          </div>
         </div>
       </div>
     </header>
