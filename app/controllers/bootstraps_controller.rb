@@ -10,4 +10,7 @@ class BootstrapsController < ApplicationController
 
   def navbar
   end
+  
+  def carousel
+  end
 end
