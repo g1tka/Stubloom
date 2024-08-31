@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box1 {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  border-radius: 30px;
+}
+
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  border-radius: 25% 10%;
+}
+
+.box3 {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  border-radius: 10% 30% 50% 70%;
+}
+
+.box4 {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  border-radius: 10% 30% 50% 70%;
+}
+
+.box5 {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  border-radius: 10px 100px / 120px;
+}
+
+.box6 {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  border-radius: 50% 20% / 10% 40%;
+}

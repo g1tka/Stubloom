@@ -1,0 +1,29 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'radii' %>
+<% end %>
+
+<div class="container">
+  <h2>radius のページ</h2>
+  <div class="row justify-content-center">
+    <div class="col-3 m-3 box1 d-flex align-items-center justify-content-center">
+      box1 border-radius: 30px;<br/>d-flex align-items-center justify-content-center
+    </div>
+    <div class="col-3 m-3 box2 d-flex align-items-center justify-content-center">
+      box2 border-radius: 25% 10%;<br/>d-flex align-items-center justify-content-center
+    </div>
+    <div class="col-3 m-3 box3 d-flex align-items-center justify-content-center">
+      box3 border-radius: 10% 30% 50% 70%;<br/>d-flex align-items-center justify-content-center
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-3 m-3 box4 d-flex align-items-center justify-content-center">
+      box4 border-radius: 10% / 50%;<br/>d-flex align-items-center justify-content-center
+    </div>
+    <div class="col-3 m-3 box5 d-flex align-items-center justify-content-center">
+      box5 border-radius: 10px 100px / 120px;<br/>d-flex align-items-center justify-content-center
+    </div>
+    <div class="col-3 m-3 box6 d-flex align-items-center justify-content-center">
+      box6 border-radius: 50% 20% / 10% 40%;<br/>d-flex align-items-center justify-content-center
+    </div>
+  </div>
+</div>
